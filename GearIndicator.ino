@@ -21,10 +21,7 @@ char gear;
 openshifter OpenShifter(2,3);
 
 void setup() {
-  /*
-   The MAX72XX is in power-saving mode on startup,
-   we have to do a wakeup call
-   */
+  
   lc.shutdown(0,false);
   /* Set the brightness to a medium values */
   lc.setIntensity(0,8);
@@ -34,11 +31,7 @@ void setup() {
   OpenShifter.begin(9600);
 }
 
-/*
- This method will display the characters for the
- word "Arduino" one after the other on the matrix. 
- (you need at least 5x7 leds to see the whole chars)
- */
+
 void writegear(char value) {
   /* here is the data for the characters */
   
@@ -144,7 +137,7 @@ void writegear(char value) {
  
 if (value == '1')
 {
-  /* now display them one by one with a small delay */
+  
   for (int i = 0; i < 8; i++)
   {
     lc.setRow(0,i,one[i]);
@@ -152,7 +145,7 @@ if (value == '1')
 }
 if (value == '2')
 {
-  /* now display them one by one with a small delay */
+ 
   for (int i = 0; i < 8; i++)
   {
     lc.setRow(0,i,two[i]);
@@ -160,7 +153,7 @@ if (value == '2')
 }
 if (value == '3')
 {
-  /* now display them one by one with a small delay */
+ 
   for (int i = 0; i < 8; i++)
   {
     lc.setRow(0,i,three[i]);
@@ -168,7 +161,7 @@ if (value == '3')
 }
 if (value == '4')
 {
-  /* now display them one by one with a small delay */
+  
   for (int i = 0; i < 8; i++)
   {
     lc.setRow(0,i,four[i]);
@@ -177,7 +170,7 @@ if (value == '4')
 
 if (value == '5')
 {
-  /* now display them one by one with a small delay */
+ 
   for (int i = 0; i < 8; i++)
   {
     lc.setRow(0,i,five[i]);
@@ -186,7 +179,7 @@ if (value == '5')
 
 if (value == '6')
 {
-  /* now display them one by one with a small delay */
+  
   for (int i = 0; i < 8; i++)
   {
     lc.setRow(0,i,six[i]);
@@ -195,7 +188,7 @@ if (value == '6')
 
 if (value == 'N')
 {
-  /* now display them one by one with a small delay */
+ 
   for (int i = 0; i < 8; i++)
   {
     lc.setRow(0,i,N[i]);
@@ -204,7 +197,7 @@ if (value == 'N')
 
 if (value == 'R')
 {
-  /* now display them one by one with a small delay */
+ 
   for (int i = 0; i < 8; i++)
   {
     lc.setRow(0,i,R[i]);

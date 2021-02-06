@@ -1,4 +1,7 @@
 //We always have to include the library
+
+// Please download LedControl library from https://github.com/wayoda/LedControl/archive/master.zip
+// copy the Led Control folder into your arduino libarays folder along with OpenShifter 
 #include "LedControl.h"
 #include <OpenShifter.h>
 
